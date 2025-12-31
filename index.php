@@ -356,7 +356,7 @@ $checkoutPage = curl_exec($ch);
         if ($retryCount < $maxRetries) {
             $retryCount++;
             unlink($cookie);
-            goto 'user-agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36',;
+            goto user_agent_Mozilla_5_0_Windows_NT_10_0_Win64_x64_AppleWebKit_537_36_KHTML_like_Gecko_Chrome_136_0_0_0_Safari_537_36;
         }
     }
 
