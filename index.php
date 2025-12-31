@@ -294,9 +294,10 @@ $response = curl_exec($ch);
         if ($retryCount < $maxRetries) {
             $retryCount++;
             unlink($cookie);
-            goto 'user-agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36',;
+            goto 'user-agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36';
         }
     }
+    
 $response = html_entity_decode($response);
 $cartCurlErr = curl_error($ch);
 curl_close($ch);
